@@ -79,7 +79,8 @@ function checkLogin() {
     } else {
       alert("Wrong password.");
     }
-  } else {
+  }
+ else {
     alert("I don't know you.");
   }
 }
@@ -124,7 +125,8 @@ function repeatUntilCorrec1() {
     answer = prompt(
       "Please enter a number greater than 100. I won't ask you again!"
     );
-    if (answer == null || answer == "") break;
+    if (answer == null || answer == "")
+      break;
   }
 }
 
@@ -225,6 +227,6 @@ function arrowFunction() {
   ask(
     "Do you agree?",
     () => alert("You agreed."),
-    () => alert("You canceled the execution.")
+    () => alert("You cancelled the execution.")
   );
 }
